@@ -1,28 +1,28 @@
 class Hajimi < Formula
   desc "A minimal AI coding agent CLI in Rust"
   homepage "https://github.com/hajimi-work/hajimi-cli"
-  version "0.3.6"
+  version "0.3.7"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.6/hajimi-aarch64-apple-darwin.tar.gz"
-      sha256 "68c9788e49c1710aeaddbf5c22c6839effb03482e6d7329ecef06cf028c5f8ef"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.7/hajimi-aarch64-apple-darwin.tar.gz"
+      sha256 "c86d1e59bc5daeccb097ddadaa086e479a2afd2eb24b7add545bb84cc9ec6a2a"
     end
     on_intel do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.6/hajimi-x86_64-apple-darwin.tar.gz"
-      sha256 "203aa6ad24389563765fbc517b24a9fbc5a97c6a00fa181bcb43761b19f89434"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.7/hajimi-x86_64-apple-darwin.tar.gz"
+      sha256 "220019ad5fc3da0ee011a5469ebe0d0b256e1294360baabcc211b00eac1db730"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.6/hajimi-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "7bba3ca02465d0f0ebfe62993a33e423f1bcefa68c6de14c833312843c0f44dc"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.7/hajimi-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "e46e9b40456567e39be68277f0ada79bb614feafe84c159488ab4ed83dea72f0"
     end
     on_intel do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.6/hajimi-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "e8bf94ade832007ec95c879d48670b32e16c4db68c1f3515fb43e9c9a18885d3"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.7/hajimi-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "06f055c01d63c8df7947e4592381f0d445fb53fea7d1c31a7d11057a1bbf884c"
     end
   end
 
