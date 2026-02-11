@@ -28,7 +28,6 @@ class Hajimi < Formula
 
   def install
     bin.install "hajimi"
-    bin.install "hajimi-web"
   end
 
   test do
