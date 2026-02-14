@@ -1,33 +1,34 @@
 class Hajimi < Formula
   desc "A minimal AI coding agent CLI in Rust"
   homepage "https://github.com/hajimi-work/hajimi-cli"
-  version "0.3.14"
+  version "0.3.15"
   license "MIT"
 
   on_macos do
     on_arm do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.14/hajimi-aarch64-apple-darwin.tar.gz"
-      sha256 "7ac7160d4bad87e1664066a32198b94c6d61f6f0feaa47d02df87cc7ad78c5ab"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.15/hajimi-aarch64-apple-darwin.tar.gz"
+      sha256 "c6fa098417f48762637984b793134825933bbb38bd8faeeebc2e1be703ba6288"
     end
     on_intel do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.14/hajimi-x86_64-apple-darwin.tar.gz"
-      sha256 "4b488af106fa5f6bd0d49feb7cbcc867565b61ab9d36288fb43f80bd077febd2"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.15/hajimi-x86_64-apple-darwin.tar.gz"
+      sha256 "6ddbcb9cfc2b93777d2ada895a571791d458c0c6030581295c89e94642ae5250"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.14/hajimi-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "718607874b0fd41f5233a22d508f50f0a66b0391dea0cfe3d8e86de811688d75"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.15/hajimi-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "7ec43ec02380cce5e2314b4d5f4be72b8bb50505337adf33652578749504cfda"
     end
     on_intel do
-      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.14/hajimi-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "33ad2a5bb734ed2e86ecab4308fc2bedf95196813dc3c7a8c76d027040c98b8a"
+      url "https://github.com/hajimi-work/hajimi-releases/releases/download/v0.3.15/hajimi-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "168d64c145437bb8c93aac0c4d1ac66e9de6a8ab21527d39e499e765491ece35"
     end
   end
 
   def install
     bin.install "hajimi"
+    bin.install_symlink "hajimi" => "h"
   end
 
   test do
